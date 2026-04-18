@@ -116,3 +116,30 @@ p {
   transform: scale(1.05);
   background: #334155;
 }
+section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.card {
+  cursor: pointer;
+}
+
+#contact {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contact-box {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.contact-box p {
+  margin: 15px 0;
+  font-size: 18px;
+}
