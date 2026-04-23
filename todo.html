@@ -73,23 +73,37 @@
 </div>
 
 <script>
-function addTask() {
+    function addTask() {
   let task = document.getElementById("task").value;
 
   if (task === "") return;
 
   let li = document.createElement("li");
-  li.innerText = task;
 
-  let btn = document.createElement("button");
-  btn.innerText = "X";
-  btn.className = "delete";
+  let span = document.createElement("span");
+  span.innerText = task;
 
-  btn.onclick = function () {
+  let editBtn = document.createElement("button");
+  editBtn.innerText = "Edit";
+
+  let deleteBtn = document.createElement("button");
+  deleteBtn.innerText = "X";
+
+  editBtn.onclick = function () {
+    let newTask = prompt("Edit your task:", span.innerText);
+    if (newTask !== null && newTask !== "") {
+      span.innerText = newTask;
+    }
+  };
+
+  deleteBtn.onclick = function () {
     li.remove();
   };
 
-  li.appendChild(btn);
+  li.appendChild(span);
+  li.appendChild(editBtn);
+  li.appendChild(deleteBtn);
+
   document.getElementById("list").appendChild(li);
 
   document.getElementById("task").value = "";
