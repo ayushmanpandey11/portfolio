@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Landing Page</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #0f172a;
+      color: white;
+    }
+
+    /* Navbar */
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background: #020617;
+    }
+
+    header h2 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      color: #38bdf8;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin: 20px 0;
+    }
+
+    .hero button {
+      padding: 12px 25px;
+      background: #38bdf8;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background: #0ea5e9;
+    }
+
+    /* Features */
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 50px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>MySite</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Features</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Welcome to My Website</h1>
+  <p>This is a modern landing page</p>
+  <button>Get Started</button>
+</div>
+
+<div class="features">
+  <div class="box">Fast</div>
+  <div class="box">Responsive</div>
+  <div class="box">Modern Design</div>
+</div>
+
+<footer>
+  <p>© 2026 My Website</p>
+</footer>
+
+</body>
+</html>
